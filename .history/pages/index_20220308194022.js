@@ -32,16 +32,16 @@ export default function Home() {
   const refTwo = createRef();
   const finalcardRef = useRef();
   const testCanvas = useRef();
-
+  
   let background = "";
 
   const Card1 = forwardRef((props, ref) => (
     <Card_1 ref={refOne} onClick={card1Handler} >
-      <ColorGrid>
+     <ColorGrid>
         <Red1 />
         <Red2 />
         <Green />
-      </ColorGrid>
+     </ColorGrid>
     </Card_1>
   ));
 
@@ -92,8 +92,8 @@ export default function Home() {
   }
 
   return (
-    <>
-      <TitleContainer>
+   <>
+   <TitleContainer>
         <Title>Design Business card with Nextjs and Emotion css</Title>
       </TitleContainer>
       <Container>
@@ -153,7 +153,7 @@ export default function Home() {
                       setWebsite(e.target.value);
                     }}
                   />
-
+               
                 </Inputs>
               </FormContainer>
             }
@@ -202,6 +202,6 @@ export default function Home() {
           </Templates>
         }
       </Container>
-    </>
+   </>
   )
 }
