@@ -9,7 +9,6 @@ export const Card_2 = styled.div`
   width: 390px;
   height: 220px;
   font-family: 'Trebuchet MS', sans-serif;
-  margin-top: 2%;
   &:hover {
     transform: scale(1.1);
     transition: 0.3s;

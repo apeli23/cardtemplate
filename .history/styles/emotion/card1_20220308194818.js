@@ -12,7 +12,7 @@ export const Card_1 = styled.div`
     box-shadow: 2px 5px 15px 0px #17161694;
     transition: smooth;
     background-color: #122529;
-    margin-top: 2%;
+    margin-top: 2%
     &:hover {
         transform: scale(1.1);
         transition: 0.3s;
