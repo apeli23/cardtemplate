@@ -93,7 +93,7 @@ export default function Home() {
 
   return (
    <>
-   Loaded functions
+   Loaded functioons
    </>
   )
 }

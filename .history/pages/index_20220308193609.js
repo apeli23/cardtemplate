@@ -53,47 +53,9 @@ export default function Home() {
       <Dots2 />
     </Card_2>
   ));
-
-  const card1Handler = async () => {
-    setSelectedTemplate(true);
-    setSelectedCard(true);
-    html2canvas(refOne.current).then((canvas) => {
-      uploadHandler(canvas.toDataURL())
-    })
-  }
-
-
-  const card2Handler = async () => {
-    setSelectedTemplate(true);
-    setSelectedCard(true)
-    html2canvas(refTwo.current).then((canvas) => {
-      uploadHandler(canvas.toDataURL())
-
-    })
-  }
-
-  const uploadHandler = async (template) => {
-    console.log(template)
-    try {
-      fetch('/api/upload', {
-        method: 'POST',
-        body: JSON.stringify({ data: template }),
-        headers: { 'Content-Type': 'application/json' },
-      })
-        .then((response) => response.json())
-        .then((data) => {
-          background = data.data
-          document.getElementById("front").style.backgroundImage = `url(${background})`
-          document.getElementById("back").style.backgroundImage = `url(${background})`
-        })
-    } catch (error) {
-      console.error(error);
-    }
-  }
-
   return (
    <>
-   Loaded functions
+   
    </>
   )
 }

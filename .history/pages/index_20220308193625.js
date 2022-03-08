@@ -90,10 +90,9 @@ export default function Home() {
       console.error(error);
     }
   }
-
   return (
    <>
-   Loaded functions
+   
    </>
   )
 }
